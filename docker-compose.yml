@@ -1,0 +1,66 @@
+
+version: "3"
+
+services:
+  iota_full_node_1:
+    container_name: iota_full_node_1
+    build: ./iota-fullnode
+    image: iota:fullnode
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.11
+
+  iota_full_node_2:
+    container_name: iota_full_node_2
+    build: ./iota-fullnode
+    image: iota:fullnode
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.12
+      
+  iota_full_node_3:
+    container_name: iota_full_node_3
+    build: ./iota-fullnode
+    image: iota:fullnode
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.13
+
+  iota_full_node_4:
+    container_name: iota_full_node_4
+    build: ./iota-fullnode
+    image: iota:fullnode
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.14
+
+  iota_full_node_5:
+    container_name: iota_full_node_5
+    build: ./iota-fullnode
+    image: iota:fullnode
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.15
+
+  iota_full_node_6:
+    container_name: iota_full_node_6
+    build: ./iota-fullnode
+    image: iota:fullnode
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.16
+
+  iota_coordinator:
+    container_name: iota_coordinator
+    build: ./iota-coordinator
+    image: iota:coordinator
+    networks:
+      testbed:
+        ipv4_address: 10.23.96.10
+
+networks:
+  testbed:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.23.96.0/24
