@@ -1,5 +1,6 @@
 # Docker for IOTA Testnet
-This project is to make it easier to run an IOTA testnet.
+This project is to make it easier to run an IOTA testnet. This document is currently a work in process. If you need any help, create an issue with the "Questions" label. I always need help making these documents more detailed. At the current moment, if you have a question, it is likely others do as well.
+
 ## Why
 IOTA does not have an easy, well documented way to run a testnet to experiment with the cryptocurrency. I needed to create a testnet to perform a research project on IOTA. It generated interest in my class so I have decided to publish the files.
 
